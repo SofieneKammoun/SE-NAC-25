@@ -1,0 +1,16 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Modeling strategies for speech enhancement in the latent space of a neural audio codec",
+    "section": "",
+    "text": "Neural audio codecs (NACs) provide compact latent speech representations in the form of sequences of continuous vectors or discrete tokens. In this work, we investigate how these two types of speech representations compare when used as training targets for supervised speech enhancement. We consider both autoregressive and non-autoregressive speech enhancement models based on the Conformer architecture, as well as a simple baseline where the NAC encoder is simply fine-tuned for speech enhancement. Our experiments reveal three key findings: predicting continuous latent representations consistently outperforms discrete token prediction; autoregressive models achieve higher quality but at the expense of intelligibility and efficiency, making non-autoregressive models more attractive in practice; and encoder fine-tuning yields the strongest enhancement metrics overall, though at the cost of degraded codec reconstruction.\n\n\nSpeech enhancement, neural audio codec, autoregressive modeling, latent representations, discrete tokens."
+  },
+  {
+    "objectID": "index.html#models",
+    "href": "index.html#models",
+    "title": "Modeling strategies for speech enhancement in the latent space of a neural audio codec",
+    "section": "Models",
+    "text": "Models"
+  }
+]

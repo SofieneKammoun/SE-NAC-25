@@ -1,0 +1,101 @@
+/* css styles */
+ 
+:root {
+  --main_font_color: #700400;
+  --secondary_font_color: #700400; /* #5aaa95; */
+  --ternary_font_color: #700400; /* #86a873; */
+  --quaternary_font_color: #700400;
+  --em_font_color: #eb811b;
+  --strong_font_color: #eb811b;
+  --eq_font_color: #700400; /* #005ea8; */
+  --bar_font_color: #b1524e;;
+
+}
+
+.reveal {
+  font-size: 20pt;
+  border-top: solid 6px var(--bar_font_color);
+
+}
+
+.reveal p {
+  line-height: 1.4;
+  margin-bottom: 20px; /* between paragraphs */
+}
+
+.reveal h1 {
+  font-weight: normal;
+  color: var(--main_font_color);
+  margin-bottom: 20px;
+}
+
+.reveal h2 {
+  color: var(--secondary_font_color);
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+.reveal h3 {
+  /*color: #CE530F;*/
+  color: var(--ternary_font_color);
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+.reveal h4 {
+  color: var(--quaternary_font_color);
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+.reveal li { margin: 0.8em; padding: 0.25em}
+
+.reveal strong {
+  color: #700400;
+  font-weight: 600;
+}
+
+.math {
+  color: var(--eq_font_color); /* Example color: green */
+}
+
+.center-h {
+  text-align: center;
+}
+
+.center-v {
+  vertical-align: middle;
+}
+
+.block-g {
+  background-color: rgba(174, 180, 175, 0.25);
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  display: block;
+  padding: 0.25em 1.25em 0em 1.25em;
+  margin: 0em 0em 0.5em 0.5em;
+  /* text-align: center; */
+}
+
+.small {
+  font-size: 16pt;  
+}
+
+.alert {
+  color: var(--em_font_color);
+}
+
+.fg {
+  color: var(--col, $em_font_color);
+}
+
+.bg {
+  background-color: var(--col, #fff);
+  padding: 0.1em;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.callout.callout-style-default .callout-body {
+  font-size: 1.8em;
+}
