@@ -6,12 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Sofiene Kammoun">
-<meta name="author" content="Xavier Alameda-Pineda">
-<meta name="author" content="Simon Leglaive">
-<meta name="dcterms.date" content="2025-09-18">
 
-<title>Modeling strategies for speech enhancement in the latent space of a neural audio codec –</title>
+<title>about –</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -93,7 +89,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
 </ul>
@@ -107,65 +103,22 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#abstract" id="toc-abstract" class="nav-link active" data-scroll-target="#abstract">Abstract</a></li>
-  <li><a href="#models" id="toc-models" class="nav-link" data-scroll-target="#models">Models</a></li>
-  <li><a href="#speech-enhancement-audio-examples" id="toc-speech-enhancement-audio-examples" class="nav-link" data-scroll-target="#speech-enhancement-audio-examples">Speech enhancement audio examples</a></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
-<main class="content column-page-left" id="quarto-document-content">
+<main class="content column-page" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Modeling strategies for speech enhancement in the latent space of a neural audio codec</h1>
+<h1 class="title">about</h1>
 </div>
 
 
-<div class="quarto-title-meta-author column-page-left">
-  <div class="quarto-title-meta-heading">Authors</div>
-  <div class="quarto-title-meta-heading">Affiliations</div>
-  
-    <div class="quarto-title-meta-contents">
-    <p class="author">Sofiene Kammoun </p>
-  </div>
-  <div class="quarto-title-meta-contents">
-        <p class="affiliation">
-            CentraleSupélec, IETR (UMR CNRS 6164)
-          </p>
-      </div>
-    <div class="quarto-title-meta-contents">
-    <p class="author">Xavier Alameda-Pineda </p>
-  </div>
-  <div class="quarto-title-meta-contents">
-        <p class="affiliation">
-            Inria at Univ. Grenoble Alpes, CNRS, LJK
-          </p>
-      </div>
-    <div class="quarto-title-meta-contents">
-    <p class="author">Simon Leglaive </p>
-  </div>
-  <div class="quarto-title-meta-contents">
-        <p class="affiliation">
-            CentraleSupélec, IETR (UMR CNRS 6164)
-          </p>
-      </div>
-  </div>
 
-<div class="quarto-title-meta column-page-left">
+<div class="quarto-title-meta column-page">
 
-      
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">September 18, 2025</p>
-    </div>
-  </div>
+    
   
     
   </div>
@@ -175,93 +128,8 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="abstract" class="level3">
-<h3 class="anchored" data-anchor-id="abstract">Abstract</h3>
-<p>Neural audio codecs (NACs) provide compact latent speech representations in the form of sequences of continuous vectors or discrete tokens. In this work, we investigate how these two types of speech representations compare when used as training targets for supervised speech enhancement. We consider both autoregressive and non-autoregressive speech enhancement models based on the Conformer architecture, as well as a simple baseline where the NAC encoder is simply fine-tuned for speech enhancement. Our experiments reveal three key findings: predicting continuous latent representations consistently outperforms discrete token prediction; autoregressive models achieve higher quality but at the expense of intelligibility and efficiency, making non-autoregressive models more attractive in practice; and encoder fine-tuning yields the strongest enhancement metrics overall, though at the cost of degraded codec reconstruction.</p>
-<section id="keywords" class="level4">
-<h4 class="anchored" data-anchor-id="keywords">Keywords</h4>
-<p>Speech enhancement, neural audio codec, autoregressive modeling, latent representations, discrete tokens.</p>
-<div style="display: flex; justify-content: center; gap: 20px; margin-top: 30px;">
-<p><a href="https://github.com/SofieneKammoun/SE-NAC-25" target="_blank" style="background-color: #24292e; color: white; padding: 12px 22px; border-radius: 6px; text-decoration: none; font-weight: 500;"> 🚧 View Code on GitHub 🚧 </a></p>
-</div>
-<div style="display: flex; justify-content: center; gap: 20px; margin-top: 30px;">
-<p><a href="https://arxiv.org/abs/XXXX.XXXXX" target="_blank" style="background-color: #b31b1b; color: white; padding: 12px 22px; border-radius: 6px; text-decoration: none; font-weight: 500;"> 🚧 Read Paper on arXiv 🚧 </a></p>
-</div>
-</section>
-</section>
-<section id="models" class="level2">
-<h2 class="anchored" data-anchor-id="models">Models</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="figure.svg" class="nostretch img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%"></p>
-</figure>
-</div>
-<div style="max-width: 900px; margin: 30px auto; text-align: justify; font-size: 1.05em; line-height: 1.6;">
-<p>
-This figure illustrates the four speech enhancement variants explored in our study, organized along two main axes: <b>representation type</b> (discrete tokens vs.&nbsp;continuous vectors) and <b>modeling strategy</b> (autoregressive vs.&nbsp;non-autoregressive). The top row shows models operating in the discrete latent space of the neural audio codec: <b>D-AR</b> (autoregressive) predicts clean speech tokens sequentially, while <b>D-NAR</b> (non-autoregressive) predicts them in parallel. The bottom row shows their continuous-space counterparts. For detailed descriptions of each model and additional variants, please refer to the paper.
-</p>
-</div>
-</section>
-<section id="speech-enhancement-audio-examples" class="level1">
-<h1>Speech enhancement audio examples</h1>
-<p><select id="exampleSelect"> <option value="1">Example 1</option> <option value="2">Example 2</option> <option value="3">Example 3</option> <option value="4">Example 4</option> <option value="5">Example 5</option> <option value="6">Example 6</option> <option value="7">Example 7</option> <option value="8">Example 8</option> <option value="9">Example 9</option> <option value="10">Example 10</option> </select></p>
-<div id="resultsTable">
-
-</div>
-<script>
-  const models = [
-    "Mixture",
-    "D-AR",
-    "D-NAR",
-    "D-NAR-star",
-    "C-AR",
-    "C-NAR",
-    "C-NAR-FT",
-    "C-FT",
-    "D-FT",
-    "DCUNet",
-    "DPTNet",
-    "Clean",
-  ];
-
-  const basePath = "Audio";  // folder where your files are
-  const resultsDiv = document.getElementById("resultsTable");
-
-function loadExample(exampleId) {
-  let html = "";
-
-  models.forEach((model, idx) => {
-    let imgPath = `${basePath}/${exampleId}_${model}.png`;  
-    let audioPath = `${basePath}/${exampleId}_${model}.wav`;
-
-    html += `
-      <div style="margin-bottom: 30px; text-align: center;">
-        <h3 style="margin: 5px 0;">${model}</h3>
-        <img src="${imgPath}" alt="${model}" style="max-width: 150%; max-height: 400px ; padding: 2px;">
-        <div style="margin-top: 10px;">
-          <audio controls src="${audioPath}" style="width: 90%;"></audio>
-        </div>
-      </div>
-    `;
-
-    // separator line, except after the last model
-    if (idx < models.length - 1) {
-      html += `<hr style="border: none; border-top: 4px solid #ccc; margin: 30px 0;">`;
-    }
-  });
-
-  resultsDiv.innerHTML = html;
-}
-
-  loadExample(1);
-
-  document.getElementById("exampleSelect").addEventListener("change", (e) => {
-    loadExample(e.target.value);
-  });
-</script>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
